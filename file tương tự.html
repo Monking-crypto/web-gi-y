@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonfire - Sole Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .product-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-black p-2 rounded-full">
+                    <i data-lucide="shopping-bag" class="text-white w-5 h-5"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight">Dragonfire</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-black">Cửa hàng</a>
+                <a href="#" class="hover:text-black">Mới về</a>
+                <a href="#" class="hover:text-black">Bộ sưu tập</a>
+            </div>
+            <div class="flex gap-4">
+                <i data-lucide="search" class="w-5 h-5 cursor-pointer"></i>
+                <i data-lucide="heart" class="w-5 h-5 cursor-pointer"></i>
+                <i data-lucide="user" class="w-5 h-5 cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-6 py-12">
+        <div class="bg-gray-900 rounded-[2rem] overflow-hidden relative min-h-[400px] flex items-center">
+            <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2070')] bg-cover bg-center"></div>
+            <div class="relative z-10 px-12 space-y-6">
+                <span class="text-white/70 uppercase tracking-widest text-sm font-bold">Bộ sưu tập 2026</span>
+                <h1 class="text-5xl md:text-7xl text-white font-bold leading-tight">Nâng tầm<br>từng bước chân.</h1>
+                <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition">Mua ngay</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="text-3xl font-bold">Sản phẩm nổi bật</h2>
+                <p class="text-gray-500">Khám phá phong cách mới nhất của Dragonfire</p>
+            </div>
+            <button class="flex items-center gap-2 text-sm font-bold border-b-2 border-black pb-1">Xem tất cả</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-square rounded-3xl overflow-hidden bg-gray-200 mb-4">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                    <button class="absolute top-4 right-4 p-3 bg-white/80 backdrop-blur rounded-full opacity-0 group-hover:opacity-100 transition">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-bold tracking-widest mb-1">Running</p>
+                        <h3 class="text-lg font-bold">Dragonfire Velocity Pro</h3>
+                    </div>
+                    <span class="font-bold text-lg">$120.00</span>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-square rounded-3xl overflow-hidden bg-gray-200 mb-4">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                    <button class="absolute top-4 right-4 p-3 bg-white/80 backdrop-blur rounded-full opacity-0 group-hover:opacity-100 transition">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-bold tracking-widest mb-1">Lifestyle</p>
+                        <h3 class="text-lg font-bold">Urban Dragon Shadow</h3>
+                    </div>
+                    <span class="font-bold text-lg">$95.00</span>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-square rounded-3xl overflow-hidden bg-gray-200 mb-4">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1964" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                    <button class="absolute top-4 right-4 p-3 bg-white/80 backdrop-blur rounded-full opacity-0 group-hover:opacity-100 transition">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-bold tracking-widest mb-1">Sport</p>
+                        <h3 class="text-lg font-bold">Dragonfire Blaze X</h3>
+                    </div>
+                    <span class="font-bold text-lg">$150.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t mt-20 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">© 2026 Dragonfire Boutique. Bài tập thiết kế giao diện.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
